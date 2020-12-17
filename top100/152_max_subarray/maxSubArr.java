@@ -26,6 +26,6 @@ class Solution
  * 2. both positive
  * 3. current number
  * 
- * https://www.youtube.com/watch?v=0Kpz-ChuQIE
+ * explaination: https://www.youtube.com/watch?v=0Kpz-ChuQIE
  * 
  * /
