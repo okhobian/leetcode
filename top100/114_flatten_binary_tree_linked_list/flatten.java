@@ -40,7 +40,7 @@ class Solution
 }
 
 /**
- * Divide and Conquer approach
+ * Divide and Conquer approach O(h)
  * https://www.youtube.com/watch?v=pVOVJ8F_A_A
  */
 class Solution 
