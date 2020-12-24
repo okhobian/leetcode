@@ -35,7 +35,12 @@ class Solution
  * 4 5 6   ->   4 5 6   ->   8 5 2    |    - - -   ->   4 \ 6   ->   8 5 2  
  * 7 8 9        1 2 3        9 6 3    |    7 8 9        1 2 \        9 6 3
  * 
- * rotate(90, counter-clockwise) -->  top-down(mid-horizontal) + diagnosis(rightTop-leftBottom)
+ * rotate(90, counter-clockwise) -->  left-right(mid-vertical) + diagnosis(leftTop-rightBottom)
+ * 
+ * 1 2 3        3 2 1        3 6 9    |    1 | 3        \ 2 1        3 6 9
+ * 4 5 6   ->   6 5 4   ->   2 5 8    |    4 | 6   ->   6 \ 4   ->   2 5 8 
+ * 7 8 9        9 8 7        1 4 7    |    7 | 9        9 8 \        1 4 7
+ * 
  * rotate(180)                   -->  top-down(mid-horizontal) + left-right(mid-vertical)
  * 
  * https://www.youtube.com/watch?v=E4r9z6kMjPU
