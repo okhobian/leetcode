@@ -33,5 +33,6 @@ class Solution
  * For each j, find how many pairs of (i,j), where i<j, (prefixSum[j] - prefixSum[i] == k)
  * 
  * https://www.youtube.com/watch?v=aYfwus5T3Bs
+ * https://leetcode.com/problems/subarray-sum-equals-k/discuss/341399/Python-clear-explanation-with-code-and-example
  * 
  */
