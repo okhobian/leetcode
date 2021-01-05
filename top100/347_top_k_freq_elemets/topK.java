@@ -32,11 +32,10 @@ class Solution
         // k: result array size
         // l: list at bucket[i] counter
         int[] res = new int[k];
-        for (int i=list.length-1, j=0; i>0; i--)
+        for (int i=list.length-1, j=0; i>0 && j<k; i--)
         {
-            if (j>=k) break;
             int l = 0;
-            while (list[i]!=null && j<k && l<list[i].size())
+            while (list[i]!=null && l<list[i].size())
             {
                 res[j] = list[i].get(l);
                 j++;
