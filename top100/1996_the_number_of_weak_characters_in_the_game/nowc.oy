@@ -1,0 +1,19 @@
+class Solution(object):
+    def numberOfWeakCharacters(self, properties):
+        """
+        :type properties: List[List[int]]
+        :rtype: int
+        """
+        
+        properties.sort(key=lambda x: (-x[0], x[1]))
+        
+        count = 0
+        max_d = 0
+        
+        for attack, defense in properties:
+            if defense < max_d:
+                count+=1
+            else:
+                max_d = max(max_d, defense)
+                
+        return count
